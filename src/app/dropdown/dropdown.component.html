@@ -1,0 +1,12 @@
+<p>dropdown works!</p>
+
+<h3> Choose a Student </h3>
+<select (change)="update($event)">
+    <option value="default">---</option>
+    <option *ngFor="let student of students" value="{{student}}">
+        {{student}}
+    </option>
+    
+</select>
+
+<p> You Selected: {{selected}}</p>
